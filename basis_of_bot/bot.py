@@ -32,5 +32,5 @@ def get_text_messages(message):
     bot.send_message(message.from_user.id, text)
     bot.send_photo(message.from_user.id, image_url)
 
-
-bot.polling(none_stop=True, interval=0)
+if __name__ == '__main__':
+    bot.polling(none_stop=True, interval=0)
